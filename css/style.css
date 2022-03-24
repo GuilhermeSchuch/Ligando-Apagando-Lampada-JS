@@ -19,6 +19,7 @@ label{
     height: 75px;
     background-color: #212121;
     border-radius: 10px;
+    z-index: 99;
 }
 
 label input{
@@ -64,4 +65,19 @@ label input:checked ~ span ion-icon{
     height: 408px;
     pointer-events: none;
     transition: 0.5s;
+}
+
+.opacidade-on{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000a6;
+    position: absolute;
+    z-index: 98;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.opacidade-off{
+    background-color: #00000000;
 }
