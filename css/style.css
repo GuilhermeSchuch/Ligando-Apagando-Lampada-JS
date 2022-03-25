@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body{
@@ -58,18 +59,12 @@ label input:checked ~ span ion-icon{
 }
 
 .bulb{
-    position: absolute;
-    top: 80px;
-    transform: translateX(-80%);
-    width: 348px;
-    height: 408px;
     pointer-events: none;
-    transition: 0.5s;
 }
 
 .opacidade-on{
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     background-color: #000000a6;
     position: absolute;
     z-index: 98;
@@ -80,4 +75,11 @@ label input:checked ~ span ion-icon{
 
 .opacidade-off{
     background-color: #00000000;
+}
+
+@media (max-width: 513px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
 }

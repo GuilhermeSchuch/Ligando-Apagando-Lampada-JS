@@ -11,6 +11,7 @@ let opacidade = document.createElement("div");
 $input.setAttribute("type", "checkbox");
 $ionIcon.setAttribute("name", "bulb-outline");
 $img.setAttribute("src", "img\\bulb_off.jpg");
+$img.setAttribute("class", "bulb");
 opacidade.setAttribute("class", "opacidade-on");
 
 //Appends
